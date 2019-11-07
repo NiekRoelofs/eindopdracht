@@ -3,10 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="keywords" content="haarlem, noord, sport, winkels, taekwondo, taekwon, toerist, referral, contact">
+    <meta name="description" content="informatie over Haarlem en sportclubs in Haarlem">
+    <meta name="author" content="Niek Roelofs">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Haarlem Noord - Sport info</title>
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
 </head>
 
 <body>
@@ -49,8 +52,8 @@
             </p>
         </article>
         <footer>Oftewel Haarlem is een erg bruisende stad waar veel te doen is.</footer>
-        <img id="img_haarlem1" src="img/Haarlem1.JPG" alt="Arial picture Haarlem">
-        <img id="img_haarlem2" src="img/Haarlem2.JPG" alt="Arial picture windmill">
+        <img id="img_haarlem1" src="img/Haarlem1.JPG" alt="Arial picture of Haarlem" title="Arial view Haarlem">
+        <img id="img_haarlem2" src="img/Haarlem2.JPG" alt="Arial picture of a windmill in Haarlem" title="Arial view windmill">
     </section>
     <section id="secondarycontent">
         <header>Informatie Haarlem Noord</header>
@@ -150,12 +153,22 @@
             deze locatie is de hoofdlocatie van de club. In Heemstede wordt alleen les gegeven aan kinderen (7-14 jaar),
             maar in Haarlem is er plek voor elke leeftijd vanaf 7 jaar.
         </p>
-        <aside><a href="https://www.taekwon.nl/taekwondo/">https://www.taekwon.nl/taekwondo/</a></aside>
+        <aside><a href="https://www.taekwon.nl/taekwondo/">Klik hier voor meer informatie!</a></aside>
         <footer>Geïntereseerd je aan te melden bij de club? Probeer dan eerst een proefles!</footer>
     </section>
-    <fieldset id="contactcontent">
-
-    </fieldset>
+    <form action="action=http://witan.nl/inholland/testform.php" method="GET" id="contactform">
+        <fieldset id="contactcontent">
+            <legend>Contact</legend>
+            Naam:
+            <input type="text" name="name" placeholder="e.g. Niek Roelofs">
+            E-mail:
+            <input type="email" name="email" placeholder="e.g. voorbeeld@email.nl">
+            Vraag:
+            <textarea name="message" placeholder="Max. 500 woorden"></textarea>
+            <button type="submit" form="contactform" value="submit">Verstuur</button>
+        </fieldset>
+    </form>
+    <footer id="sitefooter">&copy; Niek Roelofs</footer>
 </body>
 
 </html>
