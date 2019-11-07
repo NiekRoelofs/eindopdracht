@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8">
@@ -13,32 +13,37 @@
 </head>
 
 <body>
-    <header>
+    <header id="siteheader">
         <h1>Hwa-Rang Dragon Haarlem</h1>
         <h2>Dé Taekwondo school van Haarlem en omgeving.</h2>
     </header>
     <nav>
-        <ul>
-            <li>
-                <a href="#maincontent">Haarlem</a>
+        <ul id="nav-ul">
+            <li class="nav-li">
+                <a class="nav-a" id="active" href="#maincontent">Haarlem</a>
             </li>
-            <li>
-                <a href="#secondarycontent">Haarlem Noord</a>
+            <li class="nav-li">
+                <a class="nav-a" href="#secondarycontent">Haarlem Noord</a>
             </li>
-            <li>
-                <a href="#sportcontent">Sport</a>
+            <li class="nav-li">
+                <a class="nav-a" href="#sportcontent">Sport</a>
             </li>
-            <li>
-                <a href="#referralcontent">Referral</a>
+            <li class="nav-li">
+                <a class="nav-a" href="#referralcontent">Referral</a>
             </li>
-            <li>
-                <a href="#contactcontent">Contact</a>
+            <li class="nav-li" id="navcontact">
+                <a class="nav-a" href="#contactcontent">Contact</a>
             </li>
         </ul>
     </nav>
     <section id="maincontent">
-        <header>Informatie Haarlem</header>
+        <img class="img_haarlem" src="img/Haarlem1.JPG" alt="luchtfoto van Haarlem" title="luchtfoto Haarlem">
+        <img class="img_haarlem" src="img/Haarlem2.JPG" alt="luchtfoto van een windmolen in Haarlem"
+            title="luchtfoto windmolen">
         <article>
+            <header class="titels">
+                <h3>Informatie Haarlem</h3>
+            </header>
             <p>Haarlem is de hoofdstad van provincie Noord-Holland. Het is een erg toeristische stad die bekend staat om
                 de mooie oude gebouwen, restaurants, musea, kerken, de Grote Markt en nog veel meer. Één van de
                 populairste musea in Haarlem is het Teylers Museum, het heeft een mooie collectie aan kunst en is met
@@ -52,11 +57,10 @@
             </p>
         </article>
         <footer>Oftewel Haarlem is een erg bruisende stad waar veel te doen is.</footer>
-        <img id="img_haarlem1" src="img/Haarlem1.JPG" alt="Arial picture of Haarlem" title="Arial view Haarlem">
-        <img id="img_haarlem2" src="img/Haarlem2.JPG" alt="Arial picture of a windmill in Haarlem" title="Arial view windmill">
+
     </section>
     <section id="secondarycontent">
-        <header>Informatie Haarlem Noord</header>
+        <header class="titels">Informatie Haarlem Noord</header>
         <article>
             <p>Haarlem bestaat uit vijf stadsdelen en Haarlem Noord is de grootste van allemaal. Niet alleen heeft het
                 de grootste oppervlakte, maar ook heeft Haarlem Noord de meeste inwoners, namelijk 56.000 inwoners.
@@ -89,56 +93,67 @@
         </footer>
     </section>
     <section id="sportcontent">
-        <header>Sport Informatie</header>
+        <header class="titels">Sportclubs Informatie</header>
         <article>
             <ul>
                 <li>
                     <h3>Nautic Explorer</h3>
+                    <img class="sportfotos" src="img/duiker.png" alt="foto van een duiker" title="duiker">
                     Nautic Explorer is de enige club in Haarlem Noord waar je kunt leren duiken. Het is een club voor
                     jong en oud.
+                    
                 </li>
                 <li>
                     <h3>Korfbalclub Aurora</h3>
+                    <img class="sportfotos" src="img/korfbal.png" alt="foto van een korfballer" title="korfballer">
                     Bij Korfbalclub Aurora is het mogelijk om op hoog niveau te korfballen. Ze hebben veel teams en
                     staan open voor nieuwe leden.
                 </li>
                 <li>
                     <h3>Gymnastiekvereniging Volo</h3>
+                    <img class="sportfotos" src="img/gymnastiek.png" alt="foto van een gymnast" title="gymnast">
                     Gymnastiekvereniging Volo is een erg populaire vereniging met hun eigen oefenzaal. Volo staat voor;
                     Voor Onze Lichamelijke Ontwikkeling.
                 </li>
                 <li>
                     <h3>Boksfit Haarlem</h3>
+                    <img class="sportfotos" src="img/boksen.png" alt="foto van een bokser" title="bokser">
                     Boksfit levert een recreatieve vorm van boksen voor man, vrouw en zelfs kinderen. Het is een
                     uitlatingsplek waar je tegelijke tijd werkt aan je zelfvertrouwen en zelfverdediging.
                 </li>
                 <li>
                     <h3>Taekwon Taekwondo</h3>
+                    <img class="sportfotos" src="img/taekwondo.png" alt="foto van twee mensen die taekwondo beofenen" title="vechtsporters">
                     Taekwondo bij Taekwon is voor jong en oud en er wordt hier training gegeven op elk niveau. Je leert
                     hier onder andere de basistechnieken, stijlvormem, sparring, zelfverdediging en nog meer.
                 </li>
                 <li>
                     <h3>DSS Voetbal en Softbal</h3>
+                    <img class="sportfotos" src="img/voetbal.png" alt="foto van een voetbal" title="voetbal">
                     DSS bestaat al 100 jaar en is een erg populaire club om te voetballen en softballen. Er zijn vier
                     voetbalvelden en twee softbalvelden en zijn altijd opzoek naar nieuwe leden.
                 </li>
                 <li>
                     <h3>Atletiekvereniging Haarlem</h3>
+                    <img class="sportfotos" src="img/atletiek.png" alt="foto van een atleet" title="rennende atleet">
                     De Atletiekvereniging Haarlem is de grootste atletiekvereniging van Haarlem en heeft erg veel leden.
                     Er wordt op verschillende niveaus wedstrijden gedaan voor jong en oud.
                 </li>
                 <li>
                     <h3>Korfbalvereniging HKC Haarlem</h3>
+                    <img class="sportfotos" src="img/korfbal.png" alt="foto van een korfballer" title="korfballer">
                     Dit is de tweede korfbalvereniging in Haarlem. Ook deze club heeft veel leden en spelen wedstrijden
                     op niveau, maar ook recreatieve wedstrijden.
                 </li>
                 <li>
                     <h3>Kanovereniging Trekvogels</h3>
+                    <img class="sportfotos" src="img/kano.png" alt="foto van een kanoër" title="kanoër">
                     De Trekvogels zijn de enige kanovereniging in Haarlem en hebben veel leden. Met veel water in de
                     omgeving wordt er de hele week door geoefend.
                 </li>
                 <li>
                     <h3>HFC EDO</h3>
+                    <img class="sportfotos" src="img/voetbal.png" alt="foto van een voetbal" title="voetbal">
                     HFC EDO is een voetbalclub die op erg hoog niveau speelt. Er komen hier veel scouts en als je hier
                     in het eerste speelt is er zeker een kans om door te groeien naar een profclub.
                 </li>
@@ -147,7 +162,7 @@
         <footer>Dit zijn een paar voorbeelden van sportclubs in Haarlem Noord. </footer>
     </section>
     <section id="referralcontent">
-        <header>Taekwon Taekwondo</header>
+        <header class="titels">Taekwon Taekwondo</header>
         <p>Hwa-Rang Dragon heeft twee locaties namelijk een in Haarlem-Schalkwijk en een in Heemstede. Op beide locaties
             is het mogelijk om taekwondo te volgen. De locatie in Haarlem-Schalkwijk geeft ook nog andere lessen, want
             deze locatie is de hoofdlocatie van de club. In Heemstede wordt alleen les gegeven aan kinderen (7-14 jaar),
@@ -157,8 +172,9 @@
         <footer>Geïntereseerd je aan te melden bij de club? Probeer dan eerst een proefles!</footer>
     </section>
     <form action="action=http://witan.nl/inholland/testform.php" method="GET" id="contactform">
+        <!--Test form-->
         <fieldset id="contactcontent">
-            <legend>Contact</legend>
+            <legend id="contacttitel">Contact</legend>
             Naam:
             <input type="text" name="name" placeholder="e.g. Niek Roelofs">
             E-mail:
@@ -169,6 +185,7 @@
         </fieldset>
     </form>
     <footer id="sitefooter">&copy; Niek Roelofs</footer>
+
 </body>
 
 </html>
