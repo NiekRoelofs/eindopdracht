@@ -1,6 +1,24 @@
 body {
     font-family: Arial, Helvetica, sans-serif, Courier;
     background-color: #E8E8E8;
+    margin: 0;
+}
+
+#burgermenu {
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 1.1em;
+    background-color: #2CA58D;
+    width: 100%;
+    border: none;
+    margin: 0;
+    display: none;
+}
+
+#burgermenu svg {
+    margin-bottom: -6px;
 }
 
 #siteheader {
@@ -9,6 +27,9 @@ body {
     max-width: 1280px;
     margin-left: auto;
     margin-right: auto;
+    height: 24em;
+    overflow: hidden;
+    position: relative;
 }
 
 section {
@@ -18,6 +39,40 @@ section {
     margin-right: auto;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+nav {
+    width: 100%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+video {
+    top: -8em;
+    position: relative;
+    z-index: 0;
+}
+
+#video-overlay {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffffff59;
+    position: absolute;
+}
+
+.headertext {
+    position: absolute;
+    top: 5em;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.headertext+h2 {
+    margin-top: 5em;
 }
 
 p, footer {
@@ -37,6 +92,7 @@ p, footer {
     padding: 0;
     overflow: hidden;
     background-color: #2CA58D;
+    margin: 1em 0em;
 }
 
 .nav-li {
@@ -83,7 +139,7 @@ p, footer {
 .images-aside {
     display: flex;
     flex-basis: 40%;
-    flex-direction: row; 
+    flex-direction: row;
 }
 
 #imagesnoord {
@@ -98,14 +154,15 @@ p, footer {
 .halfarticle {
     display: flex;
     flex-direction: column;
-    flex: 1;  
-    flex-basis: 50%;  
+    flex: 1;
+    flex-basis: 50%;
 }
+
 #articlenoord {
     display: flex;
     flex-direction: column;
-    flex: 1;  
-    flex-basis: 60%;  
+    flex: 1;
+    flex-basis: 60%;
 }
 
 #sportcontent {
@@ -133,21 +190,27 @@ p, footer {
     border: solid 0.1em #666;
     text-align: center;
     padding: 1em;
+    background-color: #fff;
+    position: relative;
 }
 
 #sportlijst a {
-    display: inherit;
-    background-color: #fff;
-    text-decoration: none;
-    color: #000000;
-    position: relative;
-    top: 0px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
     transition: all .15s ease 0s;
 }
 
 #sportlijst a:hover {
-    background-color: #2CA58D;
+    background-color: #2CA58D59;
+}
+
+#sportlijst li:hover {
     top: -5px;
+    transition: all 0.15s ease 0s;
 }
 
 #referralcontent {
@@ -155,7 +218,7 @@ p, footer {
 }
 
 #contactform {
-    width: 30%;
+    width: 50%;
     margin-top: 2%;
     background-color: #f0f8ff;
 }
@@ -180,4 +243,74 @@ textarea {
     margin-top: 2%;
     text-align: center;
     font-size: 1.2em;
+}
+
+#cookie-wrapper {
+    position: fixed;
+    background-color: #ff6347;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    z-index: 9999;
+}
+
+#cookie-wrapper input {
+    margin: 18px 0px 15px 0px;
+}
+
+#cookie-wrapper input::before {
+    content: "Deze website gebruikt cookies";
+    position: relative;
+    left: 37%;
+    top: -3px;
+}
+
+#cookie-wrapper input:checked {
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    .headertext+h1 {
+        margin-top: -2em;
+    }
+    .flex-container {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    #sportlijst {
+        grid-template-columns: 1fr;
+    }
+    section {
+        box-sizing: border-box;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    #contactform {
+        width: 100%;
+    }
+    #nav-ul {
+        display: none;
+    }
+    .nav-li {
+        border-right: 1px solid #010101;
+        float: none;
+    }
+    #navcontact {
+        float: none;
+    }
+    #burgermenu {
+        display: block;
+    }
+    #burgermenu:hover+#nav-ul {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1197px) {
+    #sportlijst {
+        grid-template-columns: 1fr 1fr;
+    }
+    #contactform {
+        width: 70%;
+    }
 }

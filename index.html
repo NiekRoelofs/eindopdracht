@@ -6,34 +6,41 @@
     <meta name="keywords" content="haarlem, noord, sport, winkels, taekwondo, taekwon, toerist, referral, contact">
     <meta name="description" content="informatie over Haarlem en sportclubs in Haarlem">
     <meta name="author" content="Niek Roelofs">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Haarlem Noord - Sport info</title>
     <link rel="stylesheet" href="css/stylesheet.css">
 </head>
 
 <body>
     <header id="siteheader">
-        <h1>Hwa-Rang Dragon Haarlem</h1>
-        <h2>Dé Taekwondo school van Haarlem en omgeving.</h2>
-        <nav>
-            <ul id="nav-ul">
-                <li class="nav-li">
-                    <a class="nav-a" id="active" href="#maincontent">Haarlem</a>
-                </li>
-                <li class="nav-li">
-                    <a class="nav-a" href="#secondarycontent">Haarlem Noord</a>
-                </li>
-                <li class="nav-li">
-                    <a class="nav-a" href="#sportcontent">Sport</a>
-                </li>
-                <li class="nav-li">
-                    <a class="nav-a" href="#referralcontent">Referral</a>
-                </li>
-                <li class="nav-li" id="navcontact">
-                    <a class="nav-a" href="#contactcontent">Contact</a>
-                </li>
-            </ul>
-        </nav>
+        <video autoplay muted loop>
+            <source src="media/haarlemvideo.mp4" type="video/mp4">
+            Je browser kan geen video afspelen
+        </video>
+        <span id="video-overlay"></span>
+        <h1 class="headertext">Hwa-Rang Dragon Haarlem</h1>
+        <h2 class="headertext">Dé Taekwondo school van Haarlem en omgeving.</h2>
     </header>
+    <nav>
+        <button id="burgermenu">Menu <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+        <ul id="nav-ul">
+            <li class="nav-li">
+                <a class="nav-a" id="active" href="#maincontent">Haarlem</a>
+            </li>
+            <li class="nav-li">
+                <a class="nav-a" href="#secondarycontent">Haarlem Noord</a>
+            </li>
+            <li class="nav-li">
+                <a class="nav-a" href="#sportcontent">Sport</a>
+            </li>
+            <li class="nav-li">
+                <a class="nav-a" href="#referralcontent">Referral</a>
+            </li>
+            <li class="nav-li" id="navcontact">
+                <a class="nav-a" href="#contactcontent">Contact</a>
+            </li>
+        </ul>
+    </nav>
     <section id="maincontent" class="flex-container">
         <article class="halfarticle">
             <header class="titels">
@@ -52,8 +59,8 @@
             </p>
         </article>
         <aside class="images-aside">
-            <img class="img_haarlem" src="img/Haarlem1.JPG" alt="luchtfoto van Haarlem" title="luchtfoto Haarlem">
-            <img class="img_haarlem" src="img/Haarlem2.JPG" alt="luchtfoto van een windmolen in Haarlem"
+            <img class="img_haarlem" src="img/Haarlem1.png" alt="luchtfoto van Haarlem" title="luchtfoto Haarlem">
+            <img class="img_haarlem" src="img/Haarlem2.png" alt="luchtfoto van een windmolen in Haarlem"
                 title="luchtfoto windmolen">
         </aside>
         <footer>Oftewel Haarlem is een erg bruisende stad waar veel te doen is.</footer>
@@ -91,7 +98,7 @@
                 Bison Bowling is open voor iedereen met elk weekend speciale aanbiedingen.
             </p>
         </article>
-        <aside class="images-aside" id="imagesnoord" >
+        <aside class="images-aside" id="imagesnoord">
             <img class="img_haarlem" src="img/haarlemnoord1.png" alt="natuurfoto van een brug in Haarlem Noord"
                 title="natuurfoto Haarlem Noord">
             <img class="img_haarlem" src="img/haarlemnoord2.png" alt="foto van oude rijtjeshuizen in Haarlem Noord"
@@ -106,94 +113,90 @@
         </header>
         <article>
             <ul id="sportlijst">
-                <a href="https://www.nauticexplorer.nl/">
-                    <li>
-                        <img class="sportfotos" src="img/duiker.png" alt="foto van een duiker" title="duiker">
-                        <h3>Nautic Explorer</h3>
-                        <p>Nautic Explorer is de enige club in Haarlem Noord waar je kunt leren duiken. Het is een club
-                            voor
-                            jong en oud.</p>
-                    </li>
-                </a>
-                <a href="https://hkc-aurora.nl/">
-                    <li>
-                        <img class="sportfotos" src="img/korfbal.png" alt="foto van een korfballer" title="korfballer">
-                        <h3>Korfbalclub Aurora</h3>
-                        <p>Bij Korfbalclub Aurora is het mogelijk om op hoog niveau te korfballen. Ze hebben veel teams
-                            en
-                            staan open voor nieuwe leden.</p>
-                    </li>
-                </a>
-                <a href="">
-                    <li>
-                        <img class="sportfotos" src="img/gymnastiek.png" alt="foto van een gymnast" title="gymnast">
-                        <h3>Gymnastiekvereniging Volo</h3>
-                        <p>Gymnastiekvereniging Volo is een erg populaire vereniging met hun eigen oefenzaal. Volo staat
-                            voor; Voor Onze Lichamelijke Ontwikkeling.</p>
-                    </li>
-                </a>
-                <a href="">
-                    <li>
-                        <img class="sportfotos" src="img/boksen.png" alt="foto van een bokser" title="bokser">
-                        <h3>Boksfit Haarlem</h3>
-                        <p>Boksfit levert een recreatieve vorm van boksen voor man, vrouw en zelfs kinderen. Het is een
-                            uitlatingsplek waar je tegelijke tijd werkt aan je zelfvertrouwen en zelfverdediging.</p>
-                    </li>
-                </a>
-                <a href="">
-                    <li>
-                        <img class="sportfotos" src="img/taekwondo.png"
-                            alt="foto van twee mensen die taekwondo beofenen" title="vechtsporters">
-                        <h3>Taekwon Taekwondo</h3>
-                        <p>Taekwondo bij Taekwon is voor jong en oud en er wordt hier training gegeven op elk niveau. Je
-                            leert hier onder andere de basistechnieken, stijlvormem, sparring, zelfverdediging en nog
-                            meer.
-                        </p>
-                    </li>
-                </a>
-                <a href="">
-                    <li>
-                        <img class="sportfotos" src="img/voetbal.png" alt="foto van een voetbal" title="voetbal">
-                        <h3>DSS Voetbal en Softbal</h3>
-                        <p>DSS bestaat al 100 jaar en is een erg populaire club om te voetballen en softballen. Er zijn
-                            vier
-                            voetbalvelden en twee softbalvelden en zijn altijd opzoek naar nieuwe leden.</p>
-                    </li>
-                </a>
-                <a href="">
-                    <li>
-                        <img class="sportfotos" src="img/atletiek.png" alt="foto van een atleet"
-                            title="rennende atleet">
-                        <h3>Atletiekvereniging Haarlem</h3>
-                        <p>De Atletiekvereniging Haarlem is de grootste atletiekvereniging van Haarlem en heeft erg veel
-                            leden. Er wordt op verschillende niveaus wedstrijden gedaan voor jong en oud.</p>
-                    </li>
-                </a>
-                <a href="">
-                    <li>
-                        <img class="sportfotos" src="img/korfbal.png" alt="foto van een korfballer" title="korfballer">
-                        <h3>Korfbalvereniging HKC Haarlem</h3>
-                        <p>Dit is de tweede korfbalvereniging in Haarlem. Ook deze club heeft veel leden en spelen
-                            wedstrijden op niveau, maar ook recreatieve wedstrijden.</p>
-                    </li>
-                </a>
-                <a href="">
-                    <li>
-                        <img class="sportfotos" src="img/kano.png" alt="foto van een kanoër" title="kanoër">
-                        <h3>Kanovereniging Trekvogels</h3>
-                        <p>De Trekvogels zijn de enige kanovereniging in Haarlem en hebben veel leden. Met veel water in
-                            de
-                            omgeving wordt er de hele week door geoefend.</p>
-                    </li>
-                </a>
-                <a href="">
-                    <li>
-                        <img class="sportfotos" src="img/voetbal.png" alt="foto van een voetbal" title="voetbal">
-                        <h3>HFC EDO</h3>
-                        <p>HFC EDO is een voetbalclub die op erg hoog niveau speelt. Er komen hier veel scouts en als je
-                            hier in het eerste speelt is er zeker een kans om door te groeien naar een profclub.</p>
-                    </li>
-                </a>
+                <li>
+                    <img class="sportfotos" src="img/duiker.png" alt="foto van een duiker" title="duiker">
+                    <h3>Nautic Explorer</h3>
+                    <p>Nautic Explorer is de enige club in Haarlem Noord waar je kunt leren duiken. Het is een club
+                        voor
+                        jong en oud.</p>
+                    <a href="https://www.nauticexplorer.nl/"></a>
+                </li>
+                <li>
+                    <img class="sportfotos" src="img/korfbal.png" alt="foto van een korfballer" title="korfballer">
+                    <h3>Korfbalclub Aurora</h3>
+                    <p>Bij Korfbalclub Aurora is het mogelijk om op hoog niveau te korfballen. Ze hebben veel teams
+                        en
+                        staan open voor nieuwe leden.</p>
+                    <a href="https://hkc-aurora.nl/"></a>
+                </li>
+                <li>
+                    <img class="sportfotos" src="img/gymnastiek.png" alt="foto van een gymnast" title="gymnast">
+                    <h3>Gymnastiekvereniging Volo</h3>
+                    <p>Gymnastiekvereniging Volo is een erg populaire vereniging met hun eigen oefenzaal. Volo
+                        staat
+                        voor; Voor Onze Lichamelijke Ontwikkeling.</p>
+                    <a href=""></a>
+                </li>
+                <li>
+                    <img class="sportfotos" src="img/boksen.png" alt="foto van een bokser" title="bokser">
+                    <h3>Boksfit Haarlem</h3>
+                    <p>Boksfit levert een recreatieve vorm van boksen voor man, vrouw en zelfs kinderen. Het is
+                        een
+                        uitlatingsplek waar je tegelijke tijd werkt aan je zelfvertrouwen en zelfverdediging.
+                    </p>
+                    <a href=""></a>
+                </li>
+                <li>
+                    <img class="sportfotos" src="img/taekwondo.png" alt="foto van twee mensen die taekwondo beofenen"
+                        title="vechtsporters">
+                    <h3>Taekwon Taekwondo</h3>
+                    <p>Taekwondo bij Taekwon is voor jong en oud en er wordt hier training gegeven op elk
+                        niveau. Je
+                        leert hier onder andere de basistechnieken, stijlvormem, sparring, zelfverdediging en
+                        nog
+                        meer.
+                    </p>
+                    <a href=""></a>
+                </li>
+                <li>
+                    <img class="sportfotos" src="img/voetbal.png" alt="foto van een voetbal" title="voetbal">
+                    <h3>DSS Voetbal en Softbal</h3>
+                    <p>DSS bestaat al 100 jaar en is een erg populaire club om te voetballen en softballen. Er
+                        zijn
+                        vier
+                        voetbalvelden en twee softbalvelden en zijn altijd opzoek naar nieuwe leden.</p>
+                    <a href=""></a>
+                </li>
+                <li>
+                    <img class="sportfotos" src="img/atletiek.png" alt="foto van een atleet" title="rennende atleet">
+                    <h3>Atletiekvereniging Haarlem</h3>
+                    <p>De Atletiekvereniging Haarlem is de grootste atletiekvereniging van Haarlem en heeft erg
+                        veel
+                        leden. Er wordt op verschillende niveaus wedstrijden gedaan voor jong en oud.</p>
+                    <a href=""></a>
+                </li>
+                <li>
+                    <img class="sportfotos" src="img/korfbal.png" alt="foto van een korfballer" title="korfballer">
+                    <h3>Korfbalvereniging HKC Haarlem</h3>
+                    <p>Dit is de tweede korfbalvereniging in Haarlem. Ook deze club heeft veel leden en spelen
+                        wedstrijden op niveau, maar ook recreatieve wedstrijden.</p>
+                    <a href=""></a>
+                </li>
+                <li>
+                    <img class="sportfotos" src="img/kano.png" alt="foto van een kanoër" title="kanoër">
+                    <h3>Kanovereniging Trekvogels</h3>
+                    <p>De Trekvogels zijn de enige kanovereniging in Haarlem en hebben veel leden. Met veel
+                        water in de omgeving wordt er de hele week door geoefend.</p>
+                    <a href=""></a>
+                </li>
+                <li>
+                    <img class="sportfotos" src="img/voetbal.png" alt="foto van een voetbal" title="voetbal">
+                    <h3>HFC EDO</h3>
+                    <p>HFC EDO is een voetbalclub die op erg hoog niveau speelt. Er komen hier veel scouts en
+                        als je
+                        hier in het eerste speelt is er zeker een kans om door te groeien naar een profclub.</p>
+                    <a href=""></a>
+                </li>
             </ul>
         </article>
         <footer>Dit zijn een paar voorbeelden van sportclubs in Haarlem Noord. </footer>
@@ -225,8 +228,14 @@
             </fieldset>
         </form>
     </section>
-    <footer id="sitefooter">&copy; Niek Roelofs</footer>
-
+    <footer id="sitefooter">
+        <p>&copy; Niek Roelofs</p>
+        <a href="sitemap.xml">Sitemap</a>
+    </footer>
+    <span id="cookie-wrapper">
+        <input type="checkbox" id="accept">
+        <span></span>
+    </span>
 </body>
 
 </html>
