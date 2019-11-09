@@ -1,3 +1,25 @@
+@font-face {
+    font-family: 'source_sans_proregular';
+    src: url('../fonts/sourcesanspro-regular-webfont.eot');
+    src: url('../fonts/sourcesanspro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/sourcesanspro-regular-webfont.woff') format('woff'),
+        url('../fonts/sourcesanspro-regular-webfont.ttf') format('truetype');
+
+        font-weight: normal;
+        font-style: normal;
+}
+
+@font-face {
+    font-family: 'rubik_regular';
+    src: url('../fonts/rubik-regular-webfont.eot');
+    src: url('../fonts/rubik-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/rubik-regular-webfont.woff') format('woff'),
+         url('../fonts/rubik-regular-webfont.ttf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif, Courier;
     background-color: #E8E8E8;
@@ -42,13 +64,13 @@ video {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #ffffff59;
+    background-color:rgba(255, 255, 255, 0.35);
     position: absolute;
 }
 
 .headertext {
     position: absolute;
-    top: 4em ;
+    top: 4em;
     left: 0;
     right: 0;
     z-index: 10;
@@ -68,7 +90,12 @@ p, footer {
     font-size: 1.3em;
     font-weight: bold;
     color: #000066;
+    font-family: "source_sans_proregular";
+    letter-spacing: 0.1em;
+    font-size: 2em;
 }
+
+
 
 #nav-ul {
     list-style-type: none;
@@ -97,19 +124,8 @@ p, footer {
 }
 
 .nav-li:last-child {
-    border-right: none;
-    /*disable border next to contact*/
-}
-
-#navcontact {
+    border-right: none; /*disable border next to contact*/
     float: right;
-}
-
-.img_haarlem {
-    width: 48%;
-    height: 48%;
-    float: right;
-    margin: 1%;
 }
 
 .flex-container {
@@ -119,8 +135,13 @@ p, footer {
     align-items: center;
 }
 
+.excludeheader {
+    flex: 0 0 100%;
+}
+
 .images-aside {
     display: flex;
+    flex: 1;
     flex-basis: 40%;
     flex-direction: row;
 }
@@ -128,6 +149,7 @@ p, footer {
 #imagesnoord {
     flex-direction: column;
     align-items: center;
+    flex-basis: 40%;
 }
 
 #imagesnoord img {
@@ -138,7 +160,7 @@ p, footer {
     display: flex;
     flex-direction: column;
     flex: 1;
-    flex-basis: 50%;
+    flex-basis: 40%;
 }
 
 #articlenoord {
@@ -146,6 +168,20 @@ p, footer {
     flex-direction: column;
     flex: 1;
     flex-basis: 60%;
+}
+
+.img_haarlem {
+    display: flex;
+    ;
+    width: 50%;
+    height: 50%;
+    margin: 1%;
+}
+
+h4 {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-family: 'rubik_regular';
 }
 
 #sportcontent {
@@ -202,6 +238,10 @@ p, footer {
 
 #referralcontent {
     margin-top: 2%;
+}
+
+#referralfooter {
+    margin-top: 1.5em;
 }
 
 #contactform {
@@ -286,6 +326,7 @@ textarea {
         float: none;
     }
 }
+
 @media screen and (min-width: 481px) and (max-width: 1197px) {
     #sportlijst {
         grid-template-columns: 1fr 1fr;
