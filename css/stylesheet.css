@@ -90,7 +90,7 @@ p, footer {
     font-size: 1.3em;
     font-weight: bold;
     color: #000066;
-    font-family: "source_sans_proregular";
+    font-family: "source_sans_proregular", Arial, Helvetica, sans-serif;
     letter-spacing: 0.1em;
     font-size: 2em;
 }
@@ -181,7 +181,7 @@ p, footer {
 h4 {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
-    font-family: 'rubik_regular';
+    font-family: 'rubik_regular', Arial, Helvetica, sans-serif;
 }
 
 #sportcontent {
